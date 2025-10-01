@@ -18,9 +18,9 @@
                     <h3 class="text-lg font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><NuxtLink to="/" class="text-gray-600 dark:text-gray-400 hover:text-primary-500">Home</NuxtLink></li>
-                        <li><NuxtLink to="/products" class="text-gray-600 dark:text-gray-400 hover:text-primary-500">Products</NuxtLink></li>
+                        <li><NuxtLink to="/" class="text-gray-600 dark:text-gray-400 hover:text-primary-500">Products</NuxtLink></li>
                         <li><NuxtLink to="/categories" class="text-gray-600 dark:text-gray-400 hover:text-primary-500">Categories</NuxtLink></li>
-                        <li><NuxtLink to="/about" class="text-gray-600 dark:text-gray-400 hover:text-primary-500">About Us</NuxtLink></li>
+                        <li><NuxtLink to="/" class="text-gray-600 dark:text-gray-400 hover:text-primary-500">About Us</NuxtLink></li>
                     </ul>
                 </div>
                 
