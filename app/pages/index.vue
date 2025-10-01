@@ -53,18 +53,18 @@ const handleCategoryFilter = (category: string) => {
   filteredProducts.value = data.value?.filter(product => product.category.toLowerCase() === category.toLowerCase());
 }
 
-const handleSortBy = (sortBy: string) => {
-  if(!data.value) {
-    filteredProducts.value = []
-    return
-  }
+// const handleSortBy = (sortBy: string) => {
+//   if(!data.value) {
+//     filteredProducts.value = []
+//     return
+//   }
 
-  if(!sortBy){
-    filteredProducts.value = data.value
-    return
-  }
-  // Add sorting logic here based on the sortBy value
-}
+//   if(!sortBy){
+//     filteredProducts.value = data.value
+//     return
+//   }
+//   // Add sorting logic here based on the sortBy value
+// }
 
 
  // Get query parameter from URL

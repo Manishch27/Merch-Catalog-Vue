@@ -5,13 +5,6 @@ const SearchValue = ref('');
 
 const CategoryFilterValue = ref('All');
 
-const SortByValue = ref('Aubergine');
-
-const items = ref([
-  ['All','Apple', 'Banana', 'Blueberry', 'Grapes', 'Pineapple', 'Jewelery'],
-  ['Aubergine', 'Broccoli', 'Carrot', 'Courgette', 'Leek']
-])
-
 // define props
 
 const props = defineProps<{
@@ -81,13 +74,7 @@ if (props.queryCategory && newCategories.includes(props.queryCategory)) {
             <UIcon name="i-lucide-filter" size="sm" class="text-black dark:text-white" />
         </template>
         </USelect>
-
-        <USelect v-model="SortByValue" :items="items" class="w-48">
-        <template #leading>
-            <UIcon name="i-lucide-sliders-horizontal" size="sm" class="text-black dark:text-white" />
-        </template>
-        </USelect>
-
+        
         <ClientOnly>
           <span class="text-sm text-muted-foreground align-self-end">
            {{ props.filteredProducts }} Products found
